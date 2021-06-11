@@ -1,4 +1,4 @@
-# Scrapper
+# Web Scrapping
 
 ## Sobre los autores
 
@@ -9,15 +9,14 @@ Adriana Plasencia Díaz | adricivilpd@gmail.com | [@fcadrianapladia](https://git
 
 ## Sobre el Scrapper
 
-El objetivo de esta pequeña tarea es proporcionar ...
-
-algunos elementos sobre los llamados punteros inteligentes provistos por el lenguaje de programación ***C++11***, específicamente ***unique_ptr*** y ***shared_ptr***. También brindaremos una posible implementación a los punteros antes mencionado.
+El objetivo de esta pequeña tarea es proporcionar un scrapper para páginas web con el objetivo de poder descargar todo su contenido. También con esta técnica podemos extraer información y transformarla en información estructurada que podemos analizar y almacenar.
 
 ## Sobre la implementación
 
-La implementación se encuentra totalmente en [Python 3](https://es.wikipedia.org/wiki/Python). Pensamos que es una implementación legible y fácil de entender donde no hace falta tener conocimientos profundos de este lenguaje de programación. Nos apoyamos fundamentalmente en las librería [lxml](https://numpy.org/doc/stable/) y [beautifulsoup4](https://www.sympy.org/en/index.html) para la implementación.
+La implementación se encuentra totalmente en [python 3](https://es.wikipedia.org/wiki/Python). Pensamos que es una implementación legible y fácil de entender donde no hace falta tener conocimientos profundos de este lenguaje de programación. Nos apoyamos fundamentalmente en la librería [beautifulsoup4](https://www.crummy.com/software/BeautifulSoup/bs3/documentation.html) para la implementación.
+La clase Scrapper recibe la url en forma de string y devuelve los resultados en la carpeta [src/downloads](src/downloads/).
 
-Para la instalación de las mismas ejecutamos el siguiente comando:
+Para la instalación de la misma ejecutamos el siguiente comando:
 
 ```bash
 pip install -r requirements.txt
