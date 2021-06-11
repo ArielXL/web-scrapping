@@ -101,8 +101,7 @@ class Scrapper:
                 with open(os.path.join('downloads', folderName, name_url), 'wb') as fileHTML:
                     fileHTML.write(html)
 
-    def extractTags(self, tag):
-        print(f'tipo de tag = {type(tag)}')
+    def extractTags(self, tag:str):
         return (tag.has_attr('href') and (match(r'.*\.php', tag['href']) 
             or match(r'.*\.css', tag['href']) or match(r'.*\.js', tag['href']) 
               or match(r'.*\.jpg', tag['href']) or match(r'.*\.png', tag['href']) 
@@ -112,7 +111,6 @@ class Scrapper:
                       or match(r'.*\.png', tag['src']) or match(r'.*\.ico', tag['src'])))
 
     def putName(self, name):
-        print(f'tipo de name = {type(name)}')
         splitName = name.replace('?', '').replace('=', '').split('/')
         splitName = splitName[max(0, len(splitName) - 4):]
         return '-'.join(splitName)
