@@ -4,7 +4,6 @@ run:
 	python main.py
 
 install:
-	pip install lxml
 	pip install beautifulsoup4
 
 clean:
