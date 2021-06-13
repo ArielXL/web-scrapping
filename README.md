@@ -14,7 +14,7 @@ El objetivo de esta pequeña tarea es proporcionar un scrapper para páginas web
 ## Sobre la implementación
 
 La implementación se encuentra totalmente en [python 3](https://es.wikipedia.org/wiki/Python). Pensamos que es una implementación legible y fácil de entender donde no hace falta tener conocimientos profundos de este lenguaje de programación. Nos apoyamos fundamentalmente en la librería [beautifulsoup4](https://www.crummy.com/software/BeautifulSoup/bs3/documentation.html) para la implementación.
-La clase Scrapper recibe la url en forma de string y un entero que representa el nivel de profundidad a realizar el web scrapping. Los resultados se muestran en la carpeta [src/downloads](src/downloads/).
+La clase Scrapper recibe la url en forma de string y un entero que representa el nivel de profundidad a realizar el web scrapping. Los resultados se muestran en la carpeta downloads.
 
 Para la instalación de la misma ejecutamos el siguiente comando:
 
