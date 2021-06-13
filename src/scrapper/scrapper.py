@@ -116,10 +116,13 @@ class Scrapper:
 
                     if link.endswith('.html') and countLevel < self.level and self.isDomain(domain, link):
                         queueHTML.put(link)
-                    
-                    with open(os.path.join('downloads', folderName, name_url), 'wb') as fileHTML:
-                        listURL.append(link)
-                        fileHTML.write(html)
+
+                    try:                    
+                        with open(os.path.join('downloads', folderName, name_url), 'wb') as fileHTML:
+                            listURL.append(link)
+                            fileHTML.write(html)
+                    except:
+                        pass
 
     def isDomain(self, domain:str, link:str):
         ocurrencies = kmp(link, domain)
